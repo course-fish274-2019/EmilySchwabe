@@ -37,6 +37,12 @@ ggplot(fish_data_cat_largescales, aes(x=length, y= scalelength, color = lakeid))
   geom_point(size=1)
   
   
-  ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
-  geom_histogram()
+ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
+  geom_histogram(bins=80)
+  
+  ggsave("figures/scale_hist_by_length.jpg")
+  
+  
+  
+  
 
