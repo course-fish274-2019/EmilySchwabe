@@ -29,5 +29,13 @@ fish_data_cat_largescales <- filter(fish_data_cat, scalelength > 1)
 
 
 
+    #exercise 5, pushing changes 
+#make sure to load the library
+library(ggplot2)
 
+ggplot(fish_data_cat_largescales, aes(x=length, y= scalelength, color = lakeid)) +
+  geom_point(size=1)
+  
+  
+  
 
